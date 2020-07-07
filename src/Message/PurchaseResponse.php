@@ -1,12 +1,17 @@
 <?php
+/*
+2020-07-07 - Michael Grunewalder (michael@grunewalder.com):
+added "implements RedirectResponseInterface" required for redirection to gateway
+*/
 
 namespace Omnipay\Eghl\Message;
 
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RequestInterface;
+use Omnipay\Common\Message\RedirectResponseInterface;
 
-class PurchaseResponse extends AbstractResponse
+class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
     /**
      * @var  AbstractRequest
