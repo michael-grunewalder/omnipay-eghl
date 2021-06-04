@@ -13,7 +13,7 @@ class PurchaseResponse extends AbstractResponse
      */
     protected $request;
 
-    private $testUrl = 'https://test2pay.ghl.com/IPGSG/Payment.aspx';
+    private $testUrl = 'https://pay.e-ghl.com/IPGSG/Payment.aspx';
 
     private $liveUrl = 'https://securepay.e-ghl.com/IPG/Payment.aspx';
 
